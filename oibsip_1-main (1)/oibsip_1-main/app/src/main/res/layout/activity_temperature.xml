@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".temperature"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <EditText
+        android:id="@+id/entertmp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="25dp"
+        android:hint="Enter Temperature"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="122dp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="0.0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="-36dp"
+        tools:layout_editor_absoluteY="224dp"
+        android:id="@+id/anstmp"
+        android:inputType="number"/>
+
+    <RadioGroup
+        android:id="@+id/whole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp">
+
+
+        <RadioButton
+            android:id="@+id/CtoF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Celsius to Frahrenheit"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/FtoC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Frahrenheit to Celsius"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Converttmp"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:text="CONVERT"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
